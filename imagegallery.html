@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Image Gallery</title>
+    <link rel="stylesheet" href="./imagegallery.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        <div class="gallery">
+            <img src="./img1.webp" alt="Image 1" class="gallery-item" onclick="openLightbox(0)">
+            <img src="./img2.jpeg" alt="Image 2" class="gallery-item" onclick="openLightbox(1)">
+            <img src="./img3.jpg" alt="Image 3" class="gallery-item" onclick="openLightbox(2)">
+            <img src="./img4.jpg" alt="Image 4" class="gallery-item" onclick="openLightbox(3)">
+            <img src="./img5.jpg" alt="Image 5" class="gallery-item" onclick="openLightbox(4)">
+            <img src="./img6.jpeg" alt="Image 6" class="gallery-item" onclick="openLightbox(5)">
+            <img src="./img (3).jpg" alt="Image 6" class="gallery-item" onclick="openLightbox(6)">
+            <img src="./img7.jpg" alt="Image 6" class="gallery-item" onclick="openLightbox(7)">
+            <img src="./img8.jpg" alt="Image 6" class="gallery-item" onclick="openLightbox(8)">
+            <img src="./img9.jpeg" alt="Image 6" class="gallery-item" onclick="openLightbox(9)">
+            <img src="./img 10.jpg" alt="Image 6" class="gallery-item" onclick="openLightbox(10)">
+            <img src="./img (2).jpg" alt="Image 6" class="gallery-item" onclick="openLightbox(11)">
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-img">
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+    <script src="./imagegallery.js"></script>
+</body>
+</html>
